@@ -1,0 +1,13 @@
+# objective: DNA methylation analysis by applying SeSAME package on Illumina Infinium MethylationEPIC array data 
+# reference: Zhou, Triche, Laird and Shen. “SeSAMe: Reducing artifactual detection of DNA methylation by Infinium BeadChips in genomic deletions.” Nucleic Acids Research 2018
+# link: https://bioconductor.org/packages/devel/bioc/vignettes/sesame/inst/doc/sesame.html
+# Note: 1) R platform version should be >=R.4.1.0; 2) The default annotation version for human are hg38, mm10 for mouse. If you need hg19 version, just specify 'hg19' in the function you use.
+
+# installation 
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(version='devel') # usage of Bioc devel
+BiocManager::install("sesame")
+
+
